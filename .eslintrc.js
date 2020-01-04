@@ -3,11 +3,14 @@ module.exports = {
     commonjs: true,
     es6: true,
     node: true,
+    'jest/globals': true,
   },
   extends: [
     'prettier',
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:jest/recommended',
+    'plugin:jest/style',
   ],
   globals: {
     Atomics: 'readonly',
@@ -17,13 +20,8 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2018,
   },
-  plugins: ['prettier', '@typescript-eslint'],
+  plugins: ['prettier', '@typescript-eslint', 'jest'],
   rules: {
     'prettier/prettier': 2,
-    'consistent-return': 2,
-    'no-case-declarations': 2,
-    'no-param-reassign': 2,
-    'no-trailing-spaces': 2,
-    'prefer-destructuring': 1,
   },
 };
