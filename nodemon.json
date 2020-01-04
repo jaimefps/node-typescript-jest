@@ -1,7 +1,7 @@
 {
   "verbose": false,
   "ignore": [],
-  "watch": ["./index.ts"],
+  "watch": ["./src"],
   "ext": "ts",
-  "exec": "ts-node ./index.ts"
+  "exec": "ts-node ./src/index.ts"
 }

@@ -8,8 +8,8 @@ module.exports = {
   extends: [
     'prettier',
     'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:jest/recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:jest/style',
   ],
   globals: {
@@ -19,9 +19,14 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2018,
+    sourceType: 'module',
+    ecmaFeatures: {
+      modules: true,
+    },
   },
   plugins: ['prettier', '@typescript-eslint', 'jest'],
   rules: {
-    'prettier/prettier': 2,
+    'prettier/prettier': 'error',
+    'no-param-reassign': ['error', { props: true }],
   },
 };
