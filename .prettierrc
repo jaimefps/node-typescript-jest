@@ -2,5 +2,11 @@
   "semi": true,
   "trailingComma": "all",
   "singleQuote": true,
-  "printWidth": 70
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": false,
+  "bracketSpacing": true,
+  "arrowParens": "avoid",
+  "proseWrap": "preserve",
+  "endOfLine": "lf"
 }
